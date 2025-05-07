@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animals culture</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <!-- Параллакс 1 -->
+  <div class="parallax parallax-1">
+    <audio id="myAudio" autoplay loop>
+        <source src="images/elephant-58368.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает аудио.
+      </audio>
+      <button id="toggleButton"></button>
+      <div class="tooltip">
+        <span class="tooltip-text">No sound? Click here!</span>
+      </div>
+      For Whom the Elephant Trumpets?
+        </div>
+ 
+  <!-- Текст 1 -->
+  <div class="content">
+    <p>We are afraid of death. As soon as a person encounters death for the first time - usually in early childhood and accompanied by a serious existential crisis - he immediately begins to ask himself a variety of questions. What will happen after? Why do I have to die? Will I just disappear?</p>
+  </div>
+
+  <!-- Параллакс 2 -->
+  <div class="parallax parallax-2">
+    They cry
+  </div>
+
+  <!-- Текст 2 -->
+  <div class="content">
+    <h2>test</h2>
+    <p>Test text this will be</p>
+  </div>
+
+  <!-- Видео (параллакс эффект через наложение) -->
+  <div class="parallax-video">
+    <video autoplay muted loop>
+      <source src="images/463049_Elephant_Elephants_1920x1080.mp4" type="video/mp4">
+    </video>
+    <div class="parallax content" style="background: rgba(0,0,0,0.4); color: #fff;">
+      <h2>'They'</h2>
+    </div>
+  </div>
+
+  <script>
+    // Управление воспроизведением звука
+    const audio = document.getElementById("myAudio");
+    const button = document.getElementById("toggleButton");
+    const tooltip = document.querySelector(".tooltip");
+    const firstParallax = document.querySelector(".parallax-1");
+
+    button.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        button.classList.remove("muted");
+      } else {
+        audio.pause();
+        button.classList.add("muted");
+      }
+    });
+
+    // Отображение подсказки на первом параллаксе
+    window.addEventListener("scroll", function() {
+      const firstParallaxBottom = firstParallax.offsetHeight;
+
+      // Проверка на прокрутку страницы
+      if (window.scrollY > firstParallaxBottom) {
+        tooltip.style.display = "none"; // Скрыть tooltip, если прокрутили ниже первого параллакса
+      } else {
+        tooltip.style.display = "block"; // Показывать tooltip на первом параллаксе
+      }
+    });
+  </script>
+
+  <!-- Текст 3 -->
+  <div class="content">
+    <h2>Sooo</h2>
+    <p>Huge amount of text</p>
+  </div>
+
+  <!-- Футер -->
+  <footer>
+    &copy; 2025 Zoe's cats incorporation
+  </footer>
+
 </body>
 </html>
