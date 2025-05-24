@@ -45,7 +45,23 @@ position: absolute;
 opacity: 50%;
 }
 
-  
+.koko p {
+   height: 250px;
+  margin-top: -95px;
+  margin-left: 830px;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Dancing Script', cursive;
+  color: #efebeb;
+  z-index: 5;
+}
+  .koko img {
+  height: 230px;
+  margin-top: -350px;
+  margin-left: 850px;
+  position: absolute;
+}
+
   .parallax-video {
     position: relative;
     overflow: hidden;
@@ -107,7 +123,7 @@ opacity: 50%;
     color: #efebeb;
     z-index: 5;
     animation: fadeInText 1s ease-out forwards;
-    display: none;  /* Скрыть по умолчанию */
+    display: none;  
   }
   
   .tooltip:after {
