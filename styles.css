@@ -3,8 +3,8 @@ body {
     font-family: sans-serif;
     font-size: 20px;
     line-height: 1.6;
-    color: #fffcfc;
-    background-color: black;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
   }
   
   .parallax {
@@ -18,7 +18,7 @@ body {
     justify-content: center;
     color: white;
     font-size: 3em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 3px rgba(255, 252, 252, 0.6);
   }
   
   .parallax-1 {
@@ -35,7 +35,7 @@ body {
 
   .qu {
     position: relative;
-  color: #ffffff; }
+  color: #000000; }
 
  .qu img {
   height: 185px;
@@ -52,7 +52,7 @@ opacity: 60%;
   position: absolute;
   font-size: 15px;
   font-family: 'Dancing Script', cursive;
-  color: #efebeb;
+  color: #000000;
   z-index: 5;
 }
   .koko img {
@@ -83,7 +83,7 @@ opacity: 60%;
     padding: 60px 20px;
     max-width: 800px;
     margin: 0 auto;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
   }
   
   footer {
@@ -149,7 +149,7 @@ opacity: 60%;
 
    p {
     text-indent: 20px; 
-  color: #f9f9f9;}
+  color: #080808;}
    
     .letter-r {
 	font-size: 100pt;
@@ -157,12 +157,12 @@ opacity: 60%;
 	float: left;
 	margin: -40px 30px 50px 0;
 	height: 107px;
-  color: rgb(40, 37, 133)
+  color: rgb(136, 134, 220)
 }
 
 
 mark {
-  background: rgb(40, 37, 133);
+  background: rgb(93, 90, 191);
   color: white;
 }
 
