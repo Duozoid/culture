@@ -33,6 +33,10 @@ body {
     background-image: url(/images/eye.jpg);
   }
 
+  .parallax-4 {
+ background-image: url(/images/richard-jacobs-8oenpCXktqQ-unsplash.jpg);
+  }
+
   .qu {
     position: relative;
   color: #000000; }
