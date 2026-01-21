@@ -46,7 +46,7 @@ body {
   margin-top: -25px;
   margin-left: -20px;
 position: absolute;
-opacity: 60%;
+opacity: 25%;
 }
 
 .koko p {
@@ -66,6 +66,23 @@ opacity: 60%;
   position: absolute;
 }
 
+.nokoko img {
+  height: 250px;
+  margin-top: 350px;
+  margin-left: -335px;
+  position: absolute;
+}
+
+.nokoko p {
+    margin-top: 650px;
+  margin-left: -320px;
+  margin-right: 1200px;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Dancing Script', cursive;
+  color: #000000;
+  z-index: 5;
+}
   .parallax-video {
     position: relative;
     overflow: hidden;
